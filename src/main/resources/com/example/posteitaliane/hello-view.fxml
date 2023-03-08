@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.posteitaliane.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" contentDisplay="CENTER" text="poste italiane" textFill="#c91515">
+      <font>
+         <Font size="25.0" />
+      </font></Label>
+   <ListView fx:id="lista" prefHeight="200.0" prefWidth="200.0" />
+    <Button fx:id="add" onAction="#clickAggiungi" text="add" />
+   <TextField fx:id="textAdd" />
+   <Button fx:id="remove" layoutX="108.0" layoutY="332.0" onAction="#clickRmv" text="rmv" />
+   <TextField fx:id="textRemove" />
+   <Button fx:id="serve" layoutX="112.0" layoutY="287.0" onAction="#clickServe" text="serve" />
+</VBox>
